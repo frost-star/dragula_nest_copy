@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node"
+  },
+  "filesGlob": [
+    "../**/*.ts",
+    "!../**/*.d.ts",
+    "!../node_modules/**/*",
+    "../node_modules/typescript/lib/lib.es6.d.ts"
+  ],
+  "files": [
+    "./app.ts",
+    "../node_modules/typescript/lib/lib.es6.d.ts"
+  ],
+  "exclude": [
+      "node_modules",
+      "typings/browser",
+      "typings/browser.d.ts"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": {
+      "rewriteTsconfig": false
+  }
+}

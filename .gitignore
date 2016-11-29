@@ -1,0 +1,5 @@
+/node_modules
+/bower_components
+/typings
+/webroot/js/bundle.js
+/spec/bundle.js
