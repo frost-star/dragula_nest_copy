@@ -1,7 +1,7 @@
 import {ViewChild, Component, Type} from "@angular/core";
 
 @Component({
-  selector: "editor",
+  selector: "app-main",
   styles: [
     `
       .body {
@@ -10,11 +10,13 @@ import {ViewChild, Component, Type} from "@angular/core";
     `
   ],
   template: `
+  <main>
     <sidebar></sidebar>
     <div class="body">
       <blank></blank>
     </div>
+  </main>
   `
 })
-export class EditorComponent {
+export class AppMainComponent {
 }

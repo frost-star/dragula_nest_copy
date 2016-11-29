@@ -9,8 +9,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
 
 import { SidebarComponent } from "./sidebar";
-import { EditorComponent } from "./editor";
-import { ToolListComponent } from "./toolList";
+import { AppMainComponent } from "./appMain";
 
 import { DragulaModule } from "ng2-dragula/ng2-dragula";
 
@@ -24,22 +23,17 @@ import { BlankComponent } from "./blank";
     `
   ],
   template: `
-    <main>
-      <div>
-        <editor></editor>
-      </div>
-    </main>
+    <app-main></app-main>
   `
 })
-class AppBodyComponent {
+class AppComponent {
 }
 
 @NgModule({
     declarations: [
-      AppBodyComponent,
-      EditorComponent,
+      AppComponent,
+      AppMainComponent,
       SidebarComponent,
-      ToolListComponent,
       BlankComponent
     ],
     entryComponents: [
@@ -49,7 +43,7 @@ class AppBodyComponent {
       FormsModule,
       DragulaModule
     ],
-    bootstrap: [AppBodyComponent]
+    bootstrap: [AppComponent]
 })
 class AppModule {
 }
