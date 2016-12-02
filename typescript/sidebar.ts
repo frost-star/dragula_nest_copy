@@ -1,6 +1,4 @@
 import {Component} from "@angular/core";
-import { DragImage } from "ng2-dnd";
-
 import { DragulaService } from "ng2-dragula/ng2-dragula";
 
 @Component({
